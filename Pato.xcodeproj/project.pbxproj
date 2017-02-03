@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FD2522B31E43C6AC00C5C83B /* Pato.h in Headers */ = {isa = PBXBuildFile; fileRef = FD2522B11E43C6AC00C5C83B /* Pato.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FD2522BA1E43C6D600C5C83B /* Pato.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2522B91E43C6D600C5C83B /* Pato.swift */; };
 		FD2522BC1E43C7F300C5C83B /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2522BB1E43C7F300C5C83B /* UIView.swift */; };
 		FD2522BF1E43C96000C5C83B /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2522BE1E43C96000C5C83B /* UIButton.swift */; };
@@ -42,12 +41,12 @@
 		FDEF440F1E44C37A005F0BFF /* PatoTouchEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF440C1E44C349005F0BFF /* PatoTouchEvents.swift */; };
 		FDEF44121E44DF17005F0BFF /* SendEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44111E44DF17005F0BFF /* SendEvents.swift */; };
 		FDEF44131E44E634005F0BFF /* SendEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44111E44DF17005F0BFF /* SendEvents.swift */; };
+		FDEF44151E44FCEA005F0BFF /* Pato.h in Headers */ = {isa = PBXBuildFile; fileRef = FDEF44141E44FCEA005F0BFF /* Pato.h */; };
+		FDEF44171E44FCF1005F0BFF /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FDEF44161E44FCF1005F0BFF /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FD2522AE1E43C6AC00C5C83B /* Pato.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pato.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD2522B11E43C6AC00C5C83B /* Pato.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pato.h; sourceTree = "<group>"; };
-		FD2522B21E43C6AC00C5C83B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD2522B91E43C6D600C5C83B /* Pato.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pato.swift; sourceTree = "<group>"; };
 		FD2522BB1E43C7F300C5C83B /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		FD2522BE1E43C96000C5C83B /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
@@ -73,6 +72,8 @@
 		FDEF44081E44C01D005F0BFF /* RegisterFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterFlow.swift; sourceTree = "<group>"; };
 		FDEF440C1E44C349005F0BFF /* PatoTouchEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PatoTouchEvents.swift; sourceTree = "<group>"; };
 		FDEF44111E44DF17005F0BFF /* SendEvents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendEvents.swift; sourceTree = "<group>"; };
+		FDEF44141E44FCEA005F0BFF /* Pato.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pato.h; sourceTree = SOURCE_ROOT; };
+		FDEF44161E44FCF1005F0BFF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,13 +116,13 @@
 		FD2522B01E43C6AC00C5C83B /* Pato */ = {
 			isa = PBXGroup;
 			children = (
-				FD2522B11E43C6AC00C5C83B /* Pato.h */,
+				FDEF44141E44FCEA005F0BFF /* Pato.h */,
 				FD2522B91E43C6D600C5C83B /* Pato.swift */,
 				FDEF440E1E44C355005F0BFF /* Events */,
 				FD2522C01E43D1FD00C5C83B /* PatoTrackeable.swift */,
 				FD2522BD1E43C7F500C5C83B /* Extensions */,
 				FD2522C41E43D6BC00C5C83B /* Helpers */,
-				FD2522B21E43C6AC00C5C83B /* Info.plist */,
+				FDEF44161E44FCF1005F0BFF /* Info.plist */,
 			);
 			path = Pato;
 			sourceTree = "<group>";
@@ -207,7 +208,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD2522B31E43C6AC00C5C83B /* Pato.h in Headers */,
+				FDEF44151E44FCEA005F0BFF /* Pato.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +299,7 @@
 				FDEF43F61E44B1C9005F0BFF /* Info.plist in Resources */,
 				FDEF43D61E44B01D005F0BFF /* LaunchScreen.storyboard in Resources */,
 				FDEF43D51E44B01D005F0BFF /* Assets.xcassets in Resources */,
+				FDEF44171E44FCF1005F0BFF /* Info.plist in Resources */,
 				FDEF43D41E44B01D005F0BFF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
