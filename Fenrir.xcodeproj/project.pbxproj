@@ -40,6 +40,8 @@
 		FDEF448E1E450217005F0BFF /* RegisterFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44261E45004C005F0BFF /* RegisterFlow.swift */; };
 		FDEF448F1E450219005F0BFF /* SendEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44271E45004C005F0BFF /* SendEvents.swift */; };
 		FDEF44901E45021B005F0BFF /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44291E45004C005F0BFF /* Log.swift */; };
+		FDEF44921E450C75005F0BFF /* Swizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44911E450C75005F0BFF /* Swizzler.swift */; };
+		FDEF44931E450DED005F0BFF /* Swizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44911E450C75005F0BFF /* Swizzler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +79,7 @@
 		FDEF44791E4501B5005F0BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FenrirExample/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		FDEF447B1E4501B5005F0BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FenrirExample/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		FDEF447E1E4501BD005F0BFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FenrirExample/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		FDEF44911E450C75005F0BFF /* Swizzler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swizzler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				FDEF44221E45004C005F0BFF /* Fenrir.swift */,
+				FDEF44911E450C75005F0BFF /* Swizzler.swift */,
 				FDEF44591E450129005F0BFF /* Events */,
 			);
 			path = Fenrir;
@@ -365,6 +369,7 @@
 				FDEF44561E45011C005F0BFF /* UIButton.swift in Sources */,
 				FDEF44551E45011A005F0BFF /* DispatchQueue.swift in Sources */,
 				FDEF44571E45011D005F0BFF /* UITableViewDelegate.swift in Sources */,
+				FDEF44921E450C75005F0BFF /* Swizzler.swift in Sources */,
 				FDEF44581E450120005F0BFF /* UIView.swift in Sources */,
 				FDEF445C1E45013F005F0BFF /* Fenrir.swift in Sources */,
 				FDEF445D1E450141005F0BFF /* FenrirEventType.swift in Sources */,
@@ -387,6 +392,7 @@
 				FDEF44881E45020F005F0BFF /* UITableViewDelegate.swift in Sources */,
 				FDEF44891E450210005F0BFF /* UIView.swift in Sources */,
 				FDEF448A1E450211005F0BFF /* Fenrir.swift in Sources */,
+				FDEF44931E450DED005F0BFF /* Swizzler.swift in Sources */,
 				FDEF448B1E450213005F0BFF /* FenrirEventType.swift in Sources */,
 				FDEF448D1E450216005F0BFF /* FenrirTrackeable.swift in Sources */,
 				FDEF448C1E450214005F0BFF /* FenrirTouchEvents.swift in Sources */,
