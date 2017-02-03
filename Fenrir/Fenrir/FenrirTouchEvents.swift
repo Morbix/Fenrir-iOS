@@ -28,6 +28,9 @@ extension Fenrir {
         if let _ = view as? UITableViewCell {
             return "It's a table cell"
         }
+        if let _ = view as? UIView {
+            return "It's a tap gestured view"
+        }
         return "None"
     }
     
@@ -59,5 +62,15 @@ extension Fenrir {
             return
         }
         register(touchOn: cell)
+    }
+}
+
+//MARK: UITapGestureRecognized Views
+extension Fenrir {
+    @objc func touched(gestureView: UIView) {
+        guard isTracking else {
+            return
+        }
+        register(touchOn: gestureView)
     }
 }

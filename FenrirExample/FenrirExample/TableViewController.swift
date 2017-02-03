@@ -12,10 +12,14 @@ class TableViewController: UITableViewController {
     @IBOutlet weak var button: UIButton!
     @IBOutlet weak var celly: UITableViewCell!
     @IBOutlet weak var itemButton: UIBarButtonItem!
+    @IBOutlet weak var greenView: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
         button.fenrirTag = "aButton"
         celly.fenrirTag = "clickableCell"
+        let gesture = UITapGestureRecognizer(target: self, action: #selector(self.gestureAction))
+        greenView.fenrirTag = "greenView"
+        greenView.addGestureRecognizer(gesture)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -23,9 +27,8 @@ class TableViewController: UITableViewController {
         Fenrir.instance.registerFlow(self)
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    func gestureAction() {
+        print("Green view touched original method")
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

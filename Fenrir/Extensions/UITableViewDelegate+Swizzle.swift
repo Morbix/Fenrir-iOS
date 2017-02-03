@@ -13,9 +13,11 @@ extension UIViewController {
         if self is UITableViewDelegate == false || self === UITableViewController.self {
             return
         }
-        Fenrir.instance.swizzle(method: #selector(UITableViewDelegate.tableView(_:didSelectRowAt:)),
+        let originalMethod = #selector(UITableViewDelegate.tableView(_:didSelectRowAt:))
+        let newMethod = #selector(Fenrir.fenrirSwizzled_tableView(_:didSelectRowAt:))
+        Fenrir.instance.swizzle(method: originalMethod,
                                 fromClass: self,
-                                with: #selector(Fenrir.fenrirSwizzled_tableView(_:didSelectRowAt:)),
+                                with: newMethod,
                                 fromClass: Fenrir.self,
                                 token: "\(self)fenrir.tableViewSwizzle")
     }

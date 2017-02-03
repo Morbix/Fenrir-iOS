@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD466EFA1E453CB700F6574D /* UITapGestureRecognizer++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD466EF91E453CB700F6574D /* UITapGestureRecognizer++Swizzle.swift */; };
+		FD466EFB1E4542FC00F6574D /* UITapGestureRecognizer++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD466EF91E453CB700F6574D /* UITapGestureRecognizer++Swizzle.swift */; };
 		FD85267E1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85267D1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift */; };
 		FD8526801E45387900BD8ED2 /* AppDelegate++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85267D1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift */; };
 		FDEF444F1E450100005F0BFF /* Fenrir.h in Headers */ = {isa = PBXBuildFile; fileRef = FDEF444D1E450100005F0BFF /* Fenrir.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -47,6 +49,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD466EF91E453CB700F6574D /* UITapGestureRecognizer++Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer++Swizzle.swift"; sourceTree = "<group>"; };
 		FD85267D1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate++Swizzle.swift"; sourceTree = "<group>"; };
 		FDEF43DE1E44B03D005F0BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDEF43E01E44B03D005F0BFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,7 +85,7 @@
 		FDEF44791E4501B5005F0BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FenrirExample/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		FDEF447B1E4501B5005F0BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FenrirExample/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		FDEF447E1E4501BD005F0BFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FenrirExample/Assets.xcassets; sourceTree = SOURCE_ROOT; };
-		FDEF44911E450C75005F0BFF /* Swizzler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swizzler.swift; sourceTree = "<group>"; };
+		FDEF44911E450C75005F0BFF /* Swizzler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Swizzler.swift; path = ../Fenrir/Swizzler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				FDEF43D11E44B01D005F0BFF /* FenrirExample */,
-				FD2522B01E43C6AC00C5C83B /* Pato */,
+				FD2522B01E43C6AC00C5C83B /* Fenrir */,
 				FDEF43DD1E44B03D005F0BFF /* PatoExample */,
 				FDEF444C1E450100005F0BFF /* Fenrir */,
 				FDEF44671E450155005F0BFF /* FenrirExample */,
@@ -124,22 +127,29 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FD2522B01E43C6AC00C5C83B /* Pato */ = {
+		FD2522B01E43C6AC00C5C83B /* Fenrir */ = {
 			isa = PBXGroup;
 			children = (
-				FDEF441A1E45004C005F0BFF /* Fenrir */,
+				FD85267F1E4537F100BD8ED2 /* Swizzle */,
+				FDEF441B1E45004C005F0BFF /* Extensions */,
+				FDEF44211E45004C005F0BFF /* Fenrir */,
+				FDEF44281E45004C005F0BFF /* Helpers */,
 				FDEF44181E450042005F0BFF /* Fenrir.h */,
 			);
+			name = Fenrir;
 			path = Pato;
 			sourceTree = "<group>";
 		};
-		FD85267F1E4537F100BD8ED2 /* Swizzles */ = {
+		FD85267F1E4537F100BD8ED2 /* Swizzle */ = {
 			isa = PBXGroup;
 			children = (
+				FDEF44911E450C75005F0BFF /* Swizzler.swift */,
 				FDEF441F1E45004C005F0BFF /* UITableViewDelegate+Swizzle.swift */,
+				FD466EF91E453CB700F6574D /* UITapGestureRecognizer++Swizzle.swift */,
 				FD85267D1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift */,
 			);
-			name = Swizzles;
+			name = Swizzle;
+			path = ../Fenrir/Extensions;
 			sourceTree = "<group>";
 		};
 		FDEF43D11E44B01D005F0BFF /* FenrirExample */ = {
@@ -168,36 +178,26 @@
 			path = PatoExample;
 			sourceTree = "<group>";
 		};
-		FDEF441A1E45004C005F0BFF /* Fenrir */ = {
-			isa = PBXGroup;
-			children = (
-				FDEF441B1E45004C005F0BFF /* Extensions */,
-				FDEF44211E45004C005F0BFF /* Fenrir */,
-				FDEF44281E45004C005F0BFF /* Helpers */,
-			);
-			path = Fenrir;
-			sourceTree = SOURCE_ROOT;
-		};
 		FDEF441B1E45004C005F0BFF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				FD85267F1E4537F100BD8ED2 /* Swizzles */,
 				FDEF441C1E45004C005F0BFF /* Date.swift */,
 				FDEF441D1E45004C005F0BFF /* DispatchQueue.swift */,
 				FDEF441E1E45004C005F0BFF /* UIButton.swift */,
 				FDEF44201E45004C005F0BFF /* UIView.swift */,
 			);
-			path = Extensions;
+			name = Extensions;
+			path = ../Fenrir/Extensions;
 			sourceTree = "<group>";
 		};
 		FDEF44211E45004C005F0BFF /* Fenrir */ = {
 			isa = PBXGroup;
 			children = (
 				FDEF44221E45004C005F0BFF /* Fenrir.swift */,
-				FDEF44911E450C75005F0BFF /* Swizzler.swift */,
 				FDEF44591E450129005F0BFF /* Events */,
 			);
-			path = Fenrir;
+			name = Fenrir;
+			path = ../Fenrir/Fenrir;
 			sourceTree = "<group>";
 		};
 		FDEF44281E45004C005F0BFF /* Helpers */ = {
@@ -205,7 +205,8 @@
 			children = (
 				FDEF44291E45004C005F0BFF /* Log.swift */,
 			);
-			path = Helpers;
+			name = Helpers;
+			path = ../Fenrir/Helpers;
 			sourceTree = "<group>";
 		};
 		FDEF444C1E450100005F0BFF /* Fenrir */ = {
@@ -380,6 +381,7 @@
 				FDEF44541E450119005F0BFF /* Date.swift in Sources */,
 				FDEF44561E45011C005F0BFF /* UIButton.swift in Sources */,
 				FDEF44551E45011A005F0BFF /* DispatchQueue.swift in Sources */,
+				FD466EFA1E453CB700F6574D /* UITapGestureRecognizer++Swizzle.swift in Sources */,
 				FD85267E1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift in Sources */,
 				FDEF44571E45011D005F0BFF /* UITableViewDelegate+Swizzle.swift in Sources */,
 				FDEF44921E450C75005F0BFF /* Swizzler.swift in Sources */,
@@ -408,6 +410,7 @@
 				FD8526801E45387900BD8ED2 /* AppDelegate++Swizzle.swift in Sources */,
 				FDEF44931E450DED005F0BFF /* Swizzler.swift in Sources */,
 				FDEF448B1E450213005F0BFF /* FenrirEventType.swift in Sources */,
+				FD466EFB1E4542FC00F6574D /* UITapGestureRecognizer++Swizzle.swift in Sources */,
 				FDEF448D1E450216005F0BFF /* FenrirTrackeable.swift in Sources */,
 				FDEF448C1E450214005F0BFF /* FenrirTouchEvents.swift in Sources */,
 				FDEF448E1E450217005F0BFF /* RegisterFlow.swift in Sources */,
