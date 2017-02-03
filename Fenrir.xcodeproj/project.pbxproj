@@ -136,8 +136,7 @@
 				FDEF44281E45004C005F0BFF /* Helpers */,
 				FDEF44181E450042005F0BFF /* Fenrir.h */,
 			);
-			name = Fenrir;
-			path = Pato;
+			path = Fenrir;
 			sourceTree = "<group>";
 		};
 		FD85267F1E4537F100BD8ED2 /* Swizzle */ = {
