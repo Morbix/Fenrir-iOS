@@ -10,13 +10,10 @@ import UIKit
 
 extension Fenrir {
     
-    @objc fileprivate func emptyMethod() {
-        print("un")
-    }
+    @objc func emptyMethod() {}
     
     func swizzle(method originalSelector: Selector, fromClass `class`: AnyClass , with swizzledSelector: Selector, fromClass swizzledClass: AnyClass, token: String) {
         DispatchQueue.once(token: token) {
-            
             var originalMethod: Method! {
                 return class_getInstanceMethod(`class`, originalSelector)
             }
@@ -26,20 +23,16 @@ extension Fenrir {
             }
             
             if originalMethod == nil {
-                let emptySelector = #selector(self.emptyMethod)
-                let emptyMethod = class_getInstanceMethod(Fenrir.self, emptySelector)
-                class_addMethod(`class`, originalSelector, nil, nil)
-                method_setImplementation(originalMethod, method_getImplementation(emptyMethod))
+                let emptyMethod = class_getInstanceMethod(Fenrir.self, #selector(Fenrir.emptyMethod))
+                class_addMethod(`class`, originalSelector, method_getImplementation(emptyMethod), method_getTypeEncoding(emptyMethod))
             }
             
             if swizzledMethod == nil {
                 let trueSwizzledMethod = class_getInstanceMethod(swizzledClass, swizzledSelector)
-                class_addMethod(`class`, swizzledSelector, nil, nil)
-                method_setImplementation(swizzledMethod, method_getImplementation(trueSwizzledMethod))
+                class_addMethod(`class`, swizzledSelector, method_getImplementation(trueSwizzledMethod), method_getTypeEncoding(trueSwizzledMethod))
             }
             
             method_exchangeImplementations(originalMethod, swizzledMethod)
-            
         }
     }
 }

@@ -14,8 +14,8 @@ class TableViewController: UITableViewController {
     @IBOutlet weak var itemButton: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
-        button.fenrirTag = "buttonzito"
-        celly.fenrirTag = "celulita"
+        button.fenrirTag = "aButton"
+        celly.fenrirTag = "clickableCell"
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -28,8 +28,8 @@ class TableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    /*override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+   /* override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("opa")
-    }*/
+    } */
     
 }

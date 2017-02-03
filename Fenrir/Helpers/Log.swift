@@ -13,6 +13,6 @@ extension Fenrir {
         guard debugMode else {
             return
         }
-        print("PATO: " + text)
+        print("FENRIR: " + text)
     }
 }

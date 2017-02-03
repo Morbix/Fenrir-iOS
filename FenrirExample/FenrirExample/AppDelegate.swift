@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Fenrir.instance.isTracking = true
         Fenrir.instance.debugMode = true
         Fenrir.instance.stackAmount = 3
-        Fenrir.instance.eventHandler = { event in
+        Fenrir.instance.setup() { event in
             print("new event")
             print(event)
         }
@@ -25,11 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func applicationDidEnterBackground(_ application: UIApplication) {
-        Fenrir.instance.applicationDidEnterBackground()
-    }
-
-    func applicationWillTerminate(_ application: UIApplication) {
-        Fenrir.instance.applicationWillTerminate()
+        print("pipa")
     }
 
 }
