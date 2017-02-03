@@ -16,38 +16,9 @@ open class Fenrir: NSObject {
     open var isTracking: Bool = false
     open var debugMode: Bool = false
     open var stackAmount: Int? = 1
+    open var eventHandler: (([String:Any]) -> Void)?
     
     var storedEvents: [[String: Any]] = []
     var currentScreen: String?
-    var eventHandler: (([String:Any]) -> Void)?
     
-}
-
-//MARK: Setup and Delegate Swizzle
-
-extension Fenrir {
-    open func setup(eventHandler: (([String:Any]) -> Void)?) {
-        self.eventHandler = eventHandler
-        let appDelegateClass = type(of:UIApplication.shared.delegate!).self
-        Fenrir.instance.swizzle(method: #selector(UIApplicationDelegate.applicationDidEnterBackground(_:)),
-                                fromClass: appDelegateClass,
-                                with: #selector(Fenrir.fenrirSwizzled_applicationDidEnterBackground(_:)),
-                                fromClass: Fenrir.self,
-                                token: "fenrir.delegateBackgroundSwizzle")
-        Fenrir.instance.swizzle(method: #selector(UIApplicationDelegate.applicationWillTerminate(_:)),
-                                fromClass: appDelegateClass,
-                                with: #selector(Fenrir.fenrirSwizzled_applicationWillTerminate(_:)),
-                                fromClass: Fenrir.self,
-                                token: "fenrir.delegateTerminateSwizzle")
-    }
-    
-    @objc fileprivate func fenrirSwizzled_applicationDidEnterBackground(_ app: UIApplication) {
-        Fenrir.instance.dispatchEventsIfNeeded(ignoreStackAmount: true)
-        self.fenrirSwizzled_applicationDidEnterBackground(app)
-    }
-    
-    @objc fileprivate func fenrirSwizzled_applicationWillTerminate(_ app: UIApplication) {
-        Fenrir.instance.dispatchEventsIfNeeded(ignoreStackAmount: true)
-        self.fenrirSwizzled_applicationWillTerminate(app)
-    }
 }

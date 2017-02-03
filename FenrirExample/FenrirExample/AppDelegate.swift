@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Fenrir.instance.isTracking = true
         Fenrir.instance.debugMode = true
         Fenrir.instance.stackAmount = 3
-        Fenrir.instance.setup() { event in
+        Fenrir.instance.eventHandler = { event in
             print("new event")
             print(event)
         }

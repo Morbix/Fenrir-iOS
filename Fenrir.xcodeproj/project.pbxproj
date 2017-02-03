@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD85267E1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85267D1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift */; };
+		FD8526801E45387900BD8ED2 /* AppDelegate++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85267D1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift */; };
 		FDEF444F1E450100005F0BFF /* Fenrir.h in Headers */ = {isa = PBXBuildFile; fileRef = FDEF444D1E450100005F0BFF /* Fenrir.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDEF44531E450113005F0BFF /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44291E45004C005F0BFF /* Log.swift */; };
 		FDEF44541E450119005F0BFF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441C1E45004C005F0BFF /* Date.swift */; };
 		FDEF44551E45011A005F0BFF /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441D1E45004C005F0BFF /* DispatchQueue.swift */; };
 		FDEF44561E45011C005F0BFF /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441E1E45004C005F0BFF /* UIButton.swift */; };
-		FDEF44571E45011D005F0BFF /* UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441F1E45004C005F0BFF /* UITableViewDelegate.swift */; };
+		FDEF44571E45011D005F0BFF /* UITableViewDelegate+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441F1E45004C005F0BFF /* UITableViewDelegate+Swizzle.swift */; };
 		FDEF44581E450120005F0BFF /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44201E45004C005F0BFF /* UIView.swift */; };
 		FDEF445C1E45013F005F0BFF /* Fenrir.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44221E45004C005F0BFF /* Fenrir.swift */; };
 		FDEF445D1E450141005F0BFF /* FenrirEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44231E45004C005F0BFF /* FenrirEventType.swift */; };
@@ -31,7 +33,7 @@
 		FDEF44851E45020A005F0BFF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441C1E45004C005F0BFF /* Date.swift */; };
 		FDEF44861E45020C005F0BFF /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441D1E45004C005F0BFF /* DispatchQueue.swift */; };
 		FDEF44871E45020D005F0BFF /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441E1E45004C005F0BFF /* UIButton.swift */; };
-		FDEF44881E45020F005F0BFF /* UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441F1E45004C005F0BFF /* UITableViewDelegate.swift */; };
+		FDEF44881E45020F005F0BFF /* UITableViewDelegate+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441F1E45004C005F0BFF /* UITableViewDelegate+Swizzle.swift */; };
 		FDEF44891E450210005F0BFF /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44201E45004C005F0BFF /* UIView.swift */; };
 		FDEF448A1E450211005F0BFF /* Fenrir.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44221E45004C005F0BFF /* Fenrir.swift */; };
 		FDEF448B1E450213005F0BFF /* FenrirEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44231E45004C005F0BFF /* FenrirEventType.swift */; };
@@ -45,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD85267D1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate++Swizzle.swift"; sourceTree = "<group>"; };
 		FDEF43DE1E44B03D005F0BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDEF43E01E44B03D005F0BFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FDEF43E31E44B03D005F0BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -55,7 +58,7 @@
 		FDEF441C1E45004C005F0BFF /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		FDEF441D1E45004C005F0BFF /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		FDEF441E1E45004C005F0BFF /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
-		FDEF441F1E45004C005F0BFF /* UITableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewDelegate.swift; sourceTree = "<group>"; };
+		FDEF441F1E45004C005F0BFF /* UITableViewDelegate+Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewDelegate+Swizzle.swift"; sourceTree = "<group>"; };
 		FDEF44201E45004C005F0BFF /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		FDEF44221E45004C005F0BFF /* Fenrir.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fenrir.swift; sourceTree = "<group>"; };
 		FDEF44231E45004C005F0BFF /* FenrirEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FenrirEventType.swift; sourceTree = "<group>"; };
@@ -130,6 +133,15 @@
 			path = Pato;
 			sourceTree = "<group>";
 		};
+		FD85267F1E4537F100BD8ED2 /* Swizzles */ = {
+			isa = PBXGroup;
+			children = (
+				FDEF441F1E45004C005F0BFF /* UITableViewDelegate+Swizzle.swift */,
+				FD85267D1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift */,
+			);
+			name = Swizzles;
+			sourceTree = "<group>";
+		};
 		FDEF43D11E44B01D005F0BFF /* FenrirExample */ = {
 			isa = PBXGroup;
 			children = (
@@ -169,10 +181,10 @@
 		FDEF441B1E45004C005F0BFF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FD85267F1E4537F100BD8ED2 /* Swizzles */,
 				FDEF441C1E45004C005F0BFF /* Date.swift */,
 				FDEF441D1E45004C005F0BFF /* DispatchQueue.swift */,
 				FDEF441E1E45004C005F0BFF /* UIButton.swift */,
-				FDEF441F1E45004C005F0BFF /* UITableViewDelegate.swift */,
 				FDEF44201E45004C005F0BFF /* UIView.swift */,
 			);
 			path = Extensions;
@@ -368,7 +380,8 @@
 				FDEF44541E450119005F0BFF /* Date.swift in Sources */,
 				FDEF44561E45011C005F0BFF /* UIButton.swift in Sources */,
 				FDEF44551E45011A005F0BFF /* DispatchQueue.swift in Sources */,
-				FDEF44571E45011D005F0BFF /* UITableViewDelegate.swift in Sources */,
+				FD85267E1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift in Sources */,
+				FDEF44571E45011D005F0BFF /* UITableViewDelegate+Swizzle.swift in Sources */,
 				FDEF44921E450C75005F0BFF /* Swizzler.swift in Sources */,
 				FDEF44581E450120005F0BFF /* UIView.swift in Sources */,
 				FDEF445C1E45013F005F0BFF /* Fenrir.swift in Sources */,
@@ -389,9 +402,10 @@
 				FDEF44851E45020A005F0BFF /* Date.swift in Sources */,
 				FDEF44861E45020C005F0BFF /* DispatchQueue.swift in Sources */,
 				FDEF44871E45020D005F0BFF /* UIButton.swift in Sources */,
-				FDEF44881E45020F005F0BFF /* UITableViewDelegate.swift in Sources */,
+				FDEF44881E45020F005F0BFF /* UITableViewDelegate+Swizzle.swift in Sources */,
 				FDEF44891E450210005F0BFF /* UIView.swift in Sources */,
 				FDEF448A1E450211005F0BFF /* Fenrir.swift in Sources */,
+				FD8526801E45387900BD8ED2 /* AppDelegate++Swizzle.swift in Sources */,
 				FDEF44931E450DED005F0BFF /* Swizzler.swift in Sources */,
 				FDEF448B1E450213005F0BFF /* FenrirEventType.swift in Sources */,
 				FDEF448D1E450216005F0BFF /* FenrirTrackeable.swift in Sources */,
@@ -638,6 +652,7 @@
 				FDEF44521E450100005F0BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FDEF44751E450155005F0BFF /* Build configuration list for PBXNativeTarget "FenrirExample" */ = {
 			isa = XCConfigurationList;
@@ -646,6 +661,7 @@
 				FDEF44771E450155005F0BFF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
