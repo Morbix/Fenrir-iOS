@@ -31,24 +31,23 @@ extension Fenrir {
         let appDelegateClass = type(of:UIApplication.shared.delegate!).self
         Fenrir.instance.swizzle(method: #selector(UIApplicationDelegate.applicationDidEnterBackground(_:)),
                                 fromClass: appDelegateClass,
-                                with: #selector(Fenrir.applicationDidEnterBackground(_:)),
+                                with: #selector(Fenrir.fenrirSwizzled_applicationDidEnterBackground(_:)),
                                 fromClass: Fenrir.self,
                                 token: "fenrir.delegateBackgroundSwizzle")
-        
         Fenrir.instance.swizzle(method: #selector(UIApplicationDelegate.applicationWillTerminate(_:)),
                                 fromClass: appDelegateClass,
-                                with: #selector(Fenrir.applicationWillTerminate(_:)),
+                                with: #selector(Fenrir.fenrirSwizzled_applicationWillTerminate(_:)),
                                 fromClass: Fenrir.self,
                                 token: "fenrir.delegateTerminateSwizzle")
     }
     
-    @objc fileprivate func applicationDidEnterBackground(_ app: UIApplication) {
+    @objc fileprivate func fenrirSwizzled_applicationDidEnterBackground(_ app: UIApplication) {
         Fenrir.instance.dispatchEventsIfNeeded(ignoreStackAmount: true)
-        self.applicationDidEnterBackground(app)
+        self.fenrirSwizzled_applicationDidEnterBackground(app)
     }
     
-    @objc fileprivate func applicationWillTerminate(_ app: UIApplication) {
+    @objc fileprivate func fenrirSwizzled_applicationWillTerminate(_ app: UIApplication) {
         Fenrir.instance.dispatchEventsIfNeeded(ignoreStackAmount: true)
-        self.applicationWillTerminate(app)
+        self.fenrirSwizzled_applicationWillTerminate(app)
     }
 }

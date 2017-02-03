@@ -28,8 +28,8 @@ class TableViewController: UITableViewController {
         // Dispose of any resources that can be recreated.
     }
     
-   /* override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("opa")
-    } */
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("-didSelectRowAt-")
+    }
     
 }
