@@ -1,0 +1,31 @@
+//
+//  ViewController.swift
+//  meditacaoprototype
+//
+//  Created by Bruno Rocha on 1/31/17.
+//  Copyright © 2017 Bruno Rocha. All rights reserved.
+//
+
+import UIKit
+import Foundation
+
+open class Pato {
+    
+    open static let instance = Pato()
+    
+    open var isTracking: Bool = false
+    open var debugMode: Bool = false
+    open var stackAmount: Int? = 1
+    open var eventHandler: (([String:Any]) -> Void)?
+    
+    var storedEvents: [[String: Any]] = []
+    var currentScreen: String?
+    
+    open func applicationDidEnterBackground() {
+        Pato.instance.dispatchEventsIfNeeded(ignoreStackAmount: true)
+    }
+    
+    open func applicationWillTerminate() {
+        Pato.instance.dispatchEventsIfNeeded(ignoreStackAmount: true)
+    }
+}
