@@ -11,7 +11,6 @@
 		FD466EFB1E4542FC00F6574D /* UITapGestureRecognizer++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD466EF91E453CB700F6574D /* UITapGestureRecognizer++Swizzle.swift */; };
 		FD85267E1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85267D1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift */; };
 		FD8526801E45387900BD8ED2 /* AppDelegate++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85267D1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift */; };
-		FDEF444F1E450100005F0BFF /* Fenrir.h in Headers */ = {isa = PBXBuildFile; fileRef = FDEF444D1E450100005F0BFF /* Fenrir.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDEF44531E450113005F0BFF /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44291E45004C005F0BFF /* Log.swift */; };
 		FDEF44541E450119005F0BFF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441C1E45004C005F0BFF /* Date.swift */; };
 		FDEF44551E45011A005F0BFF /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441D1E45004C005F0BFF /* DispatchQueue.swift */; };
@@ -51,12 +50,6 @@
 /* Begin PBXFileReference section */
 		FD466EF91E453CB700F6574D /* UITapGestureRecognizer++Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer++Swizzle.swift"; sourceTree = "<group>"; };
 		FD85267D1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate++Swizzle.swift"; sourceTree = "<group>"; };
-		FDEF43DE1E44B03D005F0BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDEF43E01E44B03D005F0BFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FDEF43E31E44B03D005F0BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FDEF43E51E44B03D005F0BFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FDEF43E81E44B03D005F0BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FDEF43EA1E44B03D005F0BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDEF44181E450042005F0BFF /* Fenrir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fenrir.h; sourceTree = SOURCE_ROOT; };
 		FDEF441C1E45004C005F0BFF /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		FDEF441D1E45004C005F0BFF /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
@@ -73,15 +66,7 @@
 		FDEF44361E45009C005F0BFF /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = FenrirExample/FenrirExample/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
 		FDEF44381E45009C005F0BFF /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = FenrirExample/FenrirExample/TableViewController.swift; sourceTree = SOURCE_ROOT; };
 		FDEF444B1E450100005F0BFF /* Fenrir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fenrir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDEF444D1E450100005F0BFF /* Fenrir.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fenrir.h; sourceTree = "<group>"; };
-		FDEF444E1E450100005F0BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDEF44661E450155005F0BFF /* FenrirExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FenrirExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDEF44681E450155005F0BFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FDEF446A1E450155005F0BFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FDEF446D1E450155005F0BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FDEF446F1E450155005F0BFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FDEF44721E450155005F0BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FDEF44741E450155005F0BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDEF44791E4501B5005F0BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FenrirExample/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		FDEF447B1E4501B5005F0BFF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = FenrirExample/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		FDEF447E1E4501BD005F0BFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = FenrirExample/Assets.xcassets; sourceTree = SOURCE_ROOT; };
@@ -111,9 +96,6 @@
 			children = (
 				FDEF43D11E44B01D005F0BFF /* FenrirExample */,
 				FD2522B01E43C6AC00C5C83B /* Fenrir */,
-				FDEF43DD1E44B03D005F0BFF /* PatoExample */,
-				FDEF444C1E450100005F0BFF /* Fenrir */,
-				FDEF44671E450155005F0BFF /* FenrirExample */,
 				FD2522AF1E43C6AC00C5C83B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -164,19 +146,6 @@
 			path = PatoExample/PatoExample;
 			sourceTree = "<group>";
 		};
-		FDEF43DD1E44B03D005F0BFF /* PatoExample */ = {
-			isa = PBXGroup;
-			children = (
-				FDEF43DE1E44B03D005F0BFF /* AppDelegate.swift */,
-				FDEF43E01E44B03D005F0BFF /* ViewController.swift */,
-				FDEF43E21E44B03D005F0BFF /* Main.storyboard */,
-				FDEF43E51E44B03D005F0BFF /* Assets.xcassets */,
-				FDEF43E71E44B03D005F0BFF /* LaunchScreen.storyboard */,
-				FDEF43EA1E44B03D005F0BFF /* Info.plist */,
-			);
-			path = PatoExample;
-			sourceTree = "<group>";
-		};
 		FDEF441B1E45004C005F0BFF /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -208,15 +177,6 @@
 			path = ../Fenrir/Helpers;
 			sourceTree = "<group>";
 		};
-		FDEF444C1E450100005F0BFF /* Fenrir */ = {
-			isa = PBXGroup;
-			children = (
-				FDEF444D1E450100005F0BFF /* Fenrir.h */,
-				FDEF444E1E450100005F0BFF /* Info.plist */,
-			);
-			path = Fenrir;
-			sourceTree = "<group>";
-		};
 		FDEF44591E450129005F0BFF /* Events */ = {
 			isa = PBXGroup;
 			children = (
@@ -245,19 +205,6 @@
 			name = Flow;
 			sourceTree = "<group>";
 		};
-		FDEF44671E450155005F0BFF /* FenrirExample */ = {
-			isa = PBXGroup;
-			children = (
-				FDEF44681E450155005F0BFF /* AppDelegate.swift */,
-				FDEF446A1E450155005F0BFF /* ViewController.swift */,
-				FDEF446C1E450155005F0BFF /* Main.storyboard */,
-				FDEF446F1E450155005F0BFF /* Assets.xcassets */,
-				FDEF44711E450155005F0BFF /* LaunchScreen.storyboard */,
-				FDEF44741E450155005F0BFF /* Info.plist */,
-			);
-			path = FenrirExample;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -265,7 +212,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDEF444F1E450100005F0BFF /* Fenrir.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,38 +367,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FDEF43E21E44B03D005F0BFF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDEF43E31E44B03D005F0BFF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FDEF43E71E44B03D005F0BFF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDEF43E81E44B03D005F0BFF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		FDEF446C1E450155005F0BFF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDEF446D1E450155005F0BFF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FDEF44711E450155005F0BFF /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FDEF44721E450155005F0BFF /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 		FDEF44781E4501B5005F0BFF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
