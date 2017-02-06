@@ -1,8 +1,8 @@
 # Fenrir
 
 [![CocoaPods Version](https://cocoapod-badges.herokuapp.com/v/Fenrir/badge.png)](http://cocoadocs.org/docsets/Fenrir)
-[![GitHub release](https://img.shields.io/github/tag/movile/fenrir.svg)](https://github.com/Movile/Fenrir/releases)
-[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/Movile/Fenrir/master/Fenrir/LICENSE)
+[![GitHub release](https://img.shields.io/github/tag/movile/fenrir-ios.svg)](https://github.com/Movile/Fenrir-iOS/releases)
+[![GitHub license](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/Movile/Fenrir-iOS/master/Fenrir/LICENSE)
 
 Fenrir is an Analytics companion that automatically (or manually) tracks your app and generates events whenever it's buttons/cells/gestured views are touched - including time and name of the screen it happened, with minimal setup. Ideally, you should be using it alongside a system that can parse it's data into usage graphs.
 
