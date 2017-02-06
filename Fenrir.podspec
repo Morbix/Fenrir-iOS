@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name = 'Fenrir'
   s.module_name = 'Fenrir'
-  s.version = '0.0.2'
+  s.version = '0.0.3'
   s.license = { type: 'MIT', file: 'LICENSE' }
   s.summary = 'An app flow tracker for iOS written in Swift.'
   s.homepage = 'https://github.com/movile/Fenrir-iOS'
