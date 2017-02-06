@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension Fenrir {
+public extension Fenrir {
     func registerFlow(_ object: Any) {
         let `class` = String(describing: type(of:object))
         guard currentScreen != `class` else {
