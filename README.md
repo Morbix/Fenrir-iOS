@@ -1,4 +1,4 @@
-# Fenrir
+# Fenrir (WIP)
 
 Fenrir is an Analytics companion that automatically tracks every UIButton / UIBarButtonItem / UITapGestured view in your app and generates events whenever they are touched - including time and name of the screen it happened, with minimal setup. Ideally, you should be using it alongside a system that can parse it's data into usage graphs.
 
