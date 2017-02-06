@@ -12,7 +12,7 @@ extension Fenrir {
     
     @objc func emptyMethod() {}
     
-    func swizzle(method originalSelector: Selector, fromClass `class`: AnyClass , with swizzledSelector: Selector, fromClass swizzledClass: AnyClass, token: String) {
+    func swizzle(method originalSelector: Selector, fromClass `class`: AnyClass , with swizzledSelector: Selector, fromClass swizzledClass: AnyClass, token: String, dontForceAdd: Bool = false) {
         DispatchQueue.once(token: token) {
             var originalMethod: Method! {
                 return class_getInstanceMethod(`class`, originalSelector)
@@ -23,6 +23,9 @@ extension Fenrir {
             }
             
             if originalMethod == nil {
+                if dontForceAdd {
+                    return
+                }
                 let emptyMethod = class_getInstanceMethod(Fenrir.self, #selector(Fenrir.emptyMethod))
                 class_addMethod(`class`, originalSelector, method_getImplementation(emptyMethod), method_getTypeEncoding(emptyMethod))
             }

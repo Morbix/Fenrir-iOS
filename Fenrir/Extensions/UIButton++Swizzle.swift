@@ -8,19 +8,19 @@
 
 import UIKit
 
-extension UIButton {
+extension UIView {
     open override class func initialize() {
+        guard self === UIButton.self else {
+            return
+        }
         let originalMethod = #selector(UIButton.addTarget(_:action:for:))
-        let newMethod = #selector(Fenrir.fenrirSwizzled_addTarget(_:action:for:))
+        let newMethod = #selector(UIButton.fenrirSwizzled_addTarget(_:action:for:))
         Fenrir.instance.swizzle(method: originalMethod,
                                 fromClass: self,
                                 with: newMethod,
-                                fromClass: Fenrir.self,
-                                token: "fenrir.addTargetSwizzle")
+                                fromClass: self,
+                                token: "fenrir.addTargetSwizzle", dontForceAdd: true)
     }
-}
-
-extension Fenrir {
     
     @objc fileprivate func fenrirSwizzled_addTarget(_ target: Any?, action: Selector, for event: UIControlEvents) {
         guard let t = target else {
@@ -36,6 +36,9 @@ extension Fenrir {
         self.fenrirSwizzled_addTarget(target, action: action, for: event)
     }
     
+}
+
+extension Fenrir {
     @objc fileprivate func fenrirSwizzled_targetAction(sender: Any) {
         if let button = sender as? UIButton {
             Fenrir.instance.touched(button: button)

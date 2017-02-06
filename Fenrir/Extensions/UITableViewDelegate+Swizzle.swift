@@ -10,7 +10,7 @@ import UIKit
 
 extension UIViewController {
     open override class func initialize() {
-        guard self === UITableViewController.self || (self.superclass() !== UITableViewController.self && self is UITableViewDelegate) else {
+        guard self === UITableViewController.self || (self.isSubclass(of: UITableViewController.self) == false && self is UITableViewDelegate) else {
             return
         }
         let originalMethod = #selector(UITableViewDelegate.tableView(_:didSelectRowAt:))
