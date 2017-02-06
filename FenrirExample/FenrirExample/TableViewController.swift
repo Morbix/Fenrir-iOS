@@ -23,11 +23,6 @@ class TableViewController: UITableViewController {
         button.addTarget(self, action: #selector(self.buttonAction(_:)), for: .touchUpInside)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        Fenrir.instance.registerFlow(self)
-    }
-    
     @IBAction func buttonAction(_ sender: Any) {
         print("touched that button!")
     }

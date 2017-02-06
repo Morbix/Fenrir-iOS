@@ -10,6 +10,9 @@ import UIKit
 
 extension UITapGestureRecognizer {
     open override class func initialize() {
+        guard Fenrir.instance.automatic == true else {
+            return
+        }
         let originalMethod = #selector(UITapGestureRecognizer.init(target:action:))
         let newMethod = #selector(UITapGestureRecognizer.init(ta:ac:))
         Fenrir.instance.swizzle(method: originalMethod,

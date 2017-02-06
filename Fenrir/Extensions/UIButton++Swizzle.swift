@@ -10,6 +10,9 @@ import UIKit
 
 extension UIView {
     open override class func initialize() {
+        guard Fenrir.instance.automatic == true else {
+            return
+        }
         guard self === UIButton.self else {
             return
         }

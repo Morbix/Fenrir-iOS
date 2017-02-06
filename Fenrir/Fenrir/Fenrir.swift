@@ -11,7 +11,19 @@ import Foundation
 
 open class Fenrir: NSObject {
     
+    var automatic: Bool = false
+    
     open static let instance = Fenrir()
+    
+    private override init() {
+        guard let path = Bundle.main.path(forResource: "Info", ofType: "plist"),
+            let dict = NSDictionary(contentsOfFile: path) else {
+                self.automatic = false
+                return
+        }
+        let plistValue = dict["fenrirAutoMode"] as? Bool ?? false
+        self.automatic = plistValue
+    }
     
     open var isTracking: Bool = false
     open var debugMode: Bool = false

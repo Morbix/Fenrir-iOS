@@ -34,4 +34,8 @@ extension Fenrir {
             storedEvents.remove(at: 0)
         }
     }
+    
+    open func dispatchRemainingEvents() {
+        dispatchEventsIfNeeded(ignoreStackAmount: true)
+    }
 }

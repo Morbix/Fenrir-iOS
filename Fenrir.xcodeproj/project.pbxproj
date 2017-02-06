@@ -11,13 +11,14 @@
 		FD008A161E48DF5A00905A62 /* RegularViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD008A141E48DEDD00905A62 /* RegularViewController.swift */; };
 		FD466EFA1E453CB700F6574D /* UITapGestureRecognizer++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD466EF91E453CB700F6574D /* UITapGestureRecognizer++Swizzle.swift */; };
 		FD466EFB1E4542FC00F6574D /* UITapGestureRecognizer++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD466EF91E453CB700F6574D /* UITapGestureRecognizer++Swizzle.swift */; };
+		FD54D99D1E49304F00DE1A14 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD54D99C1E49304F00DE1A14 /* Info.plist */; };
 		FD85267E1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85267D1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift */; };
 		FD8526801E45387900BD8ED2 /* AppDelegate++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD85267D1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift */; };
 		FDEF44531E450113005F0BFF /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44291E45004C005F0BFF /* Log.swift */; };
 		FDEF44541E450119005F0BFF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441C1E45004C005F0BFF /* Date.swift */; };
 		FDEF44551E45011A005F0BFF /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441D1E45004C005F0BFF /* DispatchQueue.swift */; };
 		FDEF44561E45011C005F0BFF /* UIButton++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441E1E45004C005F0BFF /* UIButton++Swizzle.swift */; };
-		FDEF44571E45011D005F0BFF /* UITableViewDelegate+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441F1E45004C005F0BFF /* UITableViewDelegate+Swizzle.swift */; };
+		FDEF44571E45011D005F0BFF /* UIViewController++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441F1E45004C005F0BFF /* UIViewController++Swizzle.swift */; };
 		FDEF44581E450120005F0BFF /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44201E45004C005F0BFF /* UIView.swift */; };
 		FDEF445C1E45013F005F0BFF /* Fenrir.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44221E45004C005F0BFF /* Fenrir.swift */; };
 		FDEF445D1E450141005F0BFF /* FenrirEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44231E45004C005F0BFF /* FenrirEventType.swift */; };
@@ -36,7 +37,7 @@
 		FDEF44851E45020A005F0BFF /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441C1E45004C005F0BFF /* Date.swift */; };
 		FDEF44861E45020C005F0BFF /* DispatchQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441D1E45004C005F0BFF /* DispatchQueue.swift */; };
 		FDEF44871E45020D005F0BFF /* UIButton++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441E1E45004C005F0BFF /* UIButton++Swizzle.swift */; };
-		FDEF44881E45020F005F0BFF /* UITableViewDelegate+Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441F1E45004C005F0BFF /* UITableViewDelegate+Swizzle.swift */; };
+		FDEF44881E45020F005F0BFF /* UIViewController++Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF441F1E45004C005F0BFF /* UIViewController++Swizzle.swift */; };
 		FDEF44891E450210005F0BFF /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44201E45004C005F0BFF /* UIView.swift */; };
 		FDEF448A1E450211005F0BFF /* Fenrir.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44221E45004C005F0BFF /* Fenrir.swift */; };
 		FDEF448B1E450213005F0BFF /* FenrirEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDEF44231E45004C005F0BFF /* FenrirEventType.swift */; };
@@ -52,12 +53,13 @@
 /* Begin PBXFileReference section */
 		FD008A141E48DEDD00905A62 /* RegularViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegularViewController.swift; path = Fenrir/RegularViewController.swift; sourceTree = SOURCE_ROOT; };
 		FD466EF91E453CB700F6574D /* UITapGestureRecognizer++Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer++Swizzle.swift"; sourceTree = "<group>"; };
+		FD54D99C1E49304F00DE1A14 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = FenrirExample/Info.plist; sourceTree = SOURCE_ROOT; };
 		FD85267D1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate++Swizzle.swift"; sourceTree = "<group>"; };
 		FDEF44181E450042005F0BFF /* Fenrir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fenrir.h; sourceTree = SOURCE_ROOT; };
 		FDEF441C1E45004C005F0BFF /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		FDEF441D1E45004C005F0BFF /* DispatchQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DispatchQueue.swift; sourceTree = "<group>"; };
 		FDEF441E1E45004C005F0BFF /* UIButton++Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton++Swizzle.swift"; sourceTree = "<group>"; };
-		FDEF441F1E45004C005F0BFF /* UITableViewDelegate+Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewDelegate+Swizzle.swift"; sourceTree = "<group>"; };
+		FDEF441F1E45004C005F0BFF /* UIViewController++Swizzle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController++Swizzle.swift"; sourceTree = "<group>"; };
 		FDEF44201E45004C005F0BFF /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		FDEF44221E45004C005F0BFF /* Fenrir.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fenrir.swift; sourceTree = "<group>"; };
 		FDEF44231E45004C005F0BFF /* FenrirEventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FenrirEventType.swift; sourceTree = "<group>"; };
@@ -128,7 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				FDEF44911E450C75005F0BFF /* Swizzler.swift */,
-				FDEF441F1E45004C005F0BFF /* UITableViewDelegate+Swizzle.swift */,
+				FDEF441F1E45004C005F0BFF /* UIViewController++Swizzle.swift */,
 				FD466EF91E453CB700F6574D /* UITapGestureRecognizer++Swizzle.swift */,
 				FDEF441E1E45004C005F0BFF /* UIButton++Swizzle.swift */,
 				FD85267D1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift */,
@@ -145,6 +147,7 @@
 				FD008A141E48DEDD00905A62 /* RegularViewController.swift */,
 				FDEF44781E4501B5005F0BFF /* LaunchScreen.storyboard */,
 				FDEF447A1E4501B5005F0BFF /* Main.storyboard */,
+				FD54D99C1E49304F00DE1A14 /* Info.plist */,
 				FDEF447E1E4501BD005F0BFF /* Assets.xcassets */,
 			);
 			name = FenrirExample;
@@ -313,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD54D99D1E49304F00DE1A14 /* Info.plist in Resources */,
 				FDEF44801E4501C2005F0BFF /* Assets.xcassets in Resources */,
 				FDEF44811E4501C3005F0BFF /* Main.storyboard in Resources */,
 				FDEF44821E4501C5005F0BFF /* LaunchScreen.storyboard in Resources */,
@@ -332,7 +336,7 @@
 				FDEF44551E45011A005F0BFF /* DispatchQueue.swift in Sources */,
 				FD466EFA1E453CB700F6574D /* UITapGestureRecognizer++Swizzle.swift in Sources */,
 				FD85267E1E4537EC00BD8ED2 /* AppDelegate++Swizzle.swift in Sources */,
-				FDEF44571E45011D005F0BFF /* UITableViewDelegate+Swizzle.swift in Sources */,
+				FDEF44571E45011D005F0BFF /* UIViewController++Swizzle.swift in Sources */,
 				FD008A151E48DEDD00905A62 /* RegularViewController.swift in Sources */,
 				FDEF44921E450C75005F0BFF /* Swizzler.swift in Sources */,
 				FDEF44581E450120005F0BFF /* UIView.swift in Sources */,
@@ -354,7 +358,7 @@
 				FDEF44851E45020A005F0BFF /* Date.swift in Sources */,
 				FDEF44861E45020C005F0BFF /* DispatchQueue.swift in Sources */,
 				FDEF44871E45020D005F0BFF /* UIButton++Swizzle.swift in Sources */,
-				FDEF44881E45020F005F0BFF /* UITableViewDelegate+Swizzle.swift in Sources */,
+				FDEF44881E45020F005F0BFF /* UIViewController++Swizzle.swift in Sources */,
 				FDEF44891E450210005F0BFF /* UIView.swift in Sources */,
 				FDEF448A1E450211005F0BFF /* Fenrir.swift in Sources */,
 				FD8526801E45387900BD8ED2 /* AppDelegate++Swizzle.swift in Sources */,

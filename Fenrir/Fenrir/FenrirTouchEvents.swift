@@ -17,6 +17,10 @@ extension Fenrir {
         processTouchEvent(tag: view.fenrirTag)
     }
     
+    open func register(touchWithTag tag: String) {
+        processTouchEvent(tag: tag)
+    }
+    
     fileprivate func usefulData(forView view: Any) -> String {
         if String(describing: type(of: view)) == "UINavigationButton" {
             return "Navigation Button"

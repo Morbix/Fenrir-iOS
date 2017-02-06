@@ -10,7 +10,10 @@ import UIKit
 
 extension UIResponder {
     open override class func initialize() {
-        if self is UIApplicationDelegate == false {
+        guard Fenrir.instance.automatic == true else {
+            return
+        }
+        guard self is UIApplicationDelegate else {
             return
         }
         Fenrir.instance.swizzle(method: #selector(UIApplicationDelegate.applicationDidEnterBackground(_:)),
