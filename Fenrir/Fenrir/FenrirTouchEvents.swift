@@ -18,17 +18,17 @@ extension Fenrir {
     }
     
     fileprivate func usefulData(forView view: Any) -> String {
-        if let button = view as? UIButton {
+        if String(describing: type(of: view)) == "UINavigationButton" {
+            return "Navigation Button"
+        } else if let button = view as? UIButton {
             if let buttonText = button.titleLabel?.text {
                 return "Button Title: \(buttonText)"
             } else if let _ = button.imageView?.image {
                 return "Button has an background image"
             }
-        }
-        if let _ = view as? UITableViewCell {
+        } else if let _ = view as? UITableViewCell {
             return "It's a table cell"
-        }
-        if let _ = view as? UIView {
+        } else if let _ = view as? UIView {
             return "It's a tap gestured view"
         }
         return "None"

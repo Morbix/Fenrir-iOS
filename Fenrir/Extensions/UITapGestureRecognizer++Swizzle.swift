@@ -15,8 +15,8 @@ extension UITapGestureRecognizer {
         Fenrir.instance.swizzle(method: originalMethod,
                                 fromClass: self,
                                 with: newMethod,
-                                fromClass: Fenrir.self,
-                                token: "fenrir.tapGestureInitSwizzle")
+                                fromClass: self,
+                                token: "\(self)fenrir.tapGestureInitSwizzle")
     }
     
     @objc fileprivate convenience init(ta: Any?, ac: Selector?) {

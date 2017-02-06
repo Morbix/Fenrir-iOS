@@ -20,6 +20,7 @@ class TableViewController: UITableViewController {
         let gesture = UITapGestureRecognizer(target: self, action: #selector(self.gestureAction))
         greenView.fenrirTag = "greenView"
         greenView.addGestureRecognizer(gesture)
+        button.addTarget(self, action: #selector(self.buttonAction(_:)), for: .touchUpInside)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -27,12 +28,12 @@ class TableViewController: UITableViewController {
         Fenrir.instance.registerFlow(self)
     }
     
-    func gestureAction() {
-        print("Green view touched original method")
+    @IBAction func buttonAction(_ sender: Any) {
+        print("touched that button!")
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("-didSelectRowAt-")
+    func gestureAction() {
+        print("Green view touched original method")
     }
     
 }
