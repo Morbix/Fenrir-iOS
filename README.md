@@ -14,21 +14,21 @@ button.fenrirTag = "subscriptionButton"
 and start it at your AppDelegate:
 ```swift
 Fenrir.instance.isTracking = true
-Fenrir.instance.debugMode = true //Prints logs
-Fenrir.instance.stackAmount = 3 //Optional - Amount of events to stack before firing the handler. Default is 1. You can set nil to only send events after the app goes into background.
+Fenrir.instance.debugMode = true // Prints logs
+Fenrir.instance.stackAmount = 3 // Optional - Amount of events to stack before firing the handler. Default is 1. You can set nil to only send events after the app goes into background.
 Fenrir.instance.eventHandler = { event in
-print(event)
-//Send the event to your analytics providers, like Google Analytics
+  print(event)
+  //Send the event to your analytics providers, like Google Analytics
 }
 ```
 If you're using a custom `stackAmount` and not going to use automatic mode, add these calls as well:
 ```swift
 func applicationDidEnterBackground(_ application: UIApplication) {
-Fenrir.instance.dispatchEventsIfNeeded()
+  Fenrir.instance.dispatchEventsIfNeeded()
 }
 
 func applicationWillTerminate(_ application: UIApplication) {
-Fenrir.instance.dispatchEventsIfNeeded()
+  Fenrir.instance.dispatchEventsIfNeeded()
 }
 ```
 
@@ -50,7 +50,8 @@ To generate detailed events, you can also manually track your app's flow in orde
 For example, here we're tracking a View Controller:
 ```swift
 override func viewDidAppear(_ animated: Bool) {
-Fenrir.instance.registerFlow(self)
+  super.viewDidAppear(animated)
+  Fenrir.instance.registerFlow(self)
 }
 ```
 This will add `self`'s Class's name as an event parameter.
